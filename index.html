@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Bootstrap</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <style>
+      /* Ajuste para o Hero */
+      .hero {
+        background-image: url("./img/Alimentacao-saudavel-e-saborosa-e-possivel.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">QUICK FOOD</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Bem-vindo ao QUICK FOOD</h1>
+        <p class="lead">Alimente seu corpo, energize sua vida!</p>
+        <a
+          style="
+            width: 250px;
+            height: 45px;
+            border: none;
+            background-color: #00a000;
+            color: #fff;
+            border-radius: 10px;
+
+            transition: 0.3s ease-in-out;
+          "
+          href="#servicos"
+          class="btn btn-primary btn-lg"
+          >Saiba Mais</a
+        >
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="servicos" class="container my-5">
+      <h2 class="text-center mb-4">Nossos Serviços</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img
+              src="./img/salada-2-module-one.svg"
+              class="card-img-top"
+              alt="Imagem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Caprese Salad</h5>
+              <p class="card-text">
+                Caprese is a classic Italian salad made with sliced tomatoes.
+              </p>
+              <button
+                style="
+                  width: 200px;
+                  height: 45px;
+                  border: none;
+                  background-color: #00a000;
+                  color: #fff;
+                  border-radius: 10px;
+                "
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              >
+                Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img
+              src="./img/salada-2-module-one.svg"
+              class="card-img-top"
+              alt="Imagem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Caprese Salad</h5>
+              <p class="card-text">
+                Caprese is a classic Italian salad made with sliced tomatoes.
+              </p>
+              <button
+                style="
+                  width: 200px;
+                  height: 45px;
+                  border: none;
+                  background-color: #00a000;
+                  color: #fff;
+                  border-radius: 10px;
+                "
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              >
+                Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img
+              src="./img/salada-2-module-one.svg"
+              class="card-img-top"
+              alt="Imagem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Caprese Salad</h5>
+              <p class="card-text">
+                Caprese is a classic Italian salad made with sliced tomatoes.
+              </p>
+              <button
+                style="
+                  width: 200px;
+                  height: 45px;
+                  border: none;
+                  background-color: #00a000;
+                  color: #fff;
+                  border-radius: 10px;
+                "
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+              >
+                Detalhes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Serviço 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">Mais detalhes sobre o serviço 1.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Serviço 2</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">Mais detalhes sobre o serviço 2.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Serviço 3</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">Mais detalhes sobre o serviço 3.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrossel de Depoimentos -->
+    <section id="depoimentos" class="container my-5">
+      <h2 class="text-center mb-4">Depoimentos</h2>
+      <div
+        id="carrosselDepoimentos"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <p class="lead">"Serviço incrível! Melhor decisão que tomei."</p>
+            <small>- Cliente 1</small>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="lead">"Profissionais muito capacitados. Recomendo!"</p>
+            <small>- Cliente 2</small>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="lead">"Empresa excelente, voltarei a fazer negócios!"</p>
+            <small>- Cliente 3</small>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carrosselDepoimentos"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carrosselDepoimentos"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-dark text-white text-center py-4">
+      <p>&copy; 2025 QUICKFOOD. Todos os direitos reservados.</p>
+      <p>📍 Endereço: Carrer de Villarroel, 163, L'Eixample, 08036 Barcelona, Espanha</p>
+      <p>📧 Email: atendimento@quickfood.com</p>
+      <p>
+        🔗 Redes Sociais: <a href="#" class="text-white">Instagram</a> |
+        <a href="#" class="text-white">LinkedIn</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
